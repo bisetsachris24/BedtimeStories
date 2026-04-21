@@ -10,10 +10,11 @@ import java.util.Scanner;
 public class BedtimeStories {
     public static void main(String[] args) {
 
+        // Creating SCANNER
         Scanner theScanner = new Scanner(System.in);
 
-        System.out.println("Enter the name of the story file to read:");
-        System.out.println("(Goldilocks.txt, hansel_and_gretel.txt, mary_had_a_little_lamb.txt)");
+        System.out.print("Enter the name of the story file to read:");
+        System.out.print("(Goldilocks.txt, hansel_and_gretel.txt, mary_had_a_little_lamb.txt)");
         String fileName = theScanner.nextLine();
         try {
             BufferedReader myBufferedReader = new BufferedReader(new FileReader("src/main/resources/"+fileName));
