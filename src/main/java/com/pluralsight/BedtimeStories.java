@@ -28,6 +28,7 @@ public class BedtimeStories {
 
 
         } catch (FileNotFoundException e) {
+            System.out.println(" Can't find the file");
             throw new RuntimeException(e);
         } catch (IOException e) {
             throw new RuntimeException(e);
